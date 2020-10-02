@@ -43,19 +43,19 @@ int main()
 		}
 	
 		if (strlen(password) == 0)
-		    cout << "Please enter a password" << endl;
+		    cout << "Please enter a password:" << endl;
 		
         else
 		{
             if (error > 0)
-		        cout << "Password can only contain digits, and lowercase and uppercase letters" << endl;
+		        cout << "Password can only contain digits, lowercase letters and uppercase letters" << endl;
 		    
             else
             {
                 if (strlen(password) < 6)			//if users entry is less than 6 characters long
-		            cout << "Password needs to have 6 or more characters" << endl;
+		            cout << "Password needs to have 6 or more characters." << endl;
 	            if (low == 0)					//if users entry contains no lowercase letters
-		            cout << "Password needs to contain at least one lowercase letter" << endl;
+		            cout << "Password needs to contain at least one lowercase letter." << endl;
 		        if (up == 0)					//if users entry contains no uppercase letters
 		            cout << "Password needs to contain at least one uppercase letter" << endl;
 		        if (dig == 0)					//if users entry contains no digits
